@@ -1,0 +1,176 @@
+---
+layout: page
+title: Projects
+description: Real-world Data Engineering & AI Solutions
+background: '/img/bg-projects.jpg'
+---
+
+<style>
+  .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+  }
+  .project-card {
+    background: #ffffff;
+    border-radius: 14px;
+    padding: 25px;
+    border: 1px solid #eee;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.06);
+    transition: all 0.25s ease;
+  }
+  .project-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 14px 28px rgba(0,0,0,0.12);
+  }
+  .project-icon {
+    font-size: 42px;
+    margin-bottom: 10px;
+    color: #0078ff;
+  }
+  .project-title {
+    font-size: 1.35rem;
+    font-weight: bold;
+    margin-bottom: 8px;
+  }
+  .project-desc {
+    font-size: 0.95rem;
+    color: #444;
+    margin-bottom: 12px;
+  }
+  .project-tags span {
+    display: inline-block;
+    background: #eef5ff;
+    color: #0366d6;
+    padding: 5px 10px;
+    margin: 3px;
+    border-radius: 8px;
+    font-size: 0.8rem;
+  }
+  .project-link {
+    margin-top: 12px;
+    display: inline-block;
+    font-weight: 600;
+    color: #0078ff;
+  }
+</style>
+
+
+<p>
+Here is a curated selection of real-world data engineering, cloud, and AI projects I’ve architected, designed, or delivered.  
+Each project highlights meaningful business outcomes, technical depth, and modern engineering practices.
+</p>
+
+
+<div class="projects-grid">
+
+  <!-- PROJECT 1 -->
+  <div class="project-card">
+    <div class="project-icon">⚡</div>
+    <div class="project-title">Real-Time Payments Pipeline (MSK + Flink)</div>
+    <div class="project-desc">
+      Designed and built a real-time event processing platform for high-volume payment transactions, ensuring sub-second latency and guaranteed delivery.
+    </div>
+    <div class="project-tags">
+      <span>Apache Flink</span><span>Kafka/MSK</span><span>FlinkSQL</span><span>Python</span><span>Monitoring</span>
+    </div>
+  </div>
+
+  <!-- PROJECT 2 -->
+  <div class="project-card">
+    <div class="project-icon">🏗️</div>
+    <div class="project-title">Snowflake → Apache Doris Migration</div>
+    <div class="project-desc">
+      Led the full migration of analytics workloads from Snowflake to Apache Doris, reducing cost by 70% and improving query performance dramatically.
+    </div>
+    <div class="project-tags">
+      <span>Apache Doris</span><span>ETL</span><span>AWS</span><span>Optimization</span><span>Data Warehouse</span>
+    </div>
+  </div>
+
+  <!-- PROJECT 3 -->
+  <div class="project-card">
+    <div class="project-icon">🤖</div>
+    <div class="project-title">Enterprise GenAI & RAG Platform</div>
+    <div class="project-desc">
+      Architected and implemented an enterprise-ready Retrieval Augmented Generation system using vector databases and scalable embedding pipelines.
+    </div>
+    <div class="project-tags">
+      <span>GenAI</span><span>RAG</span><span>FAISS</span><span>OpenSearch</span><span>Embeddings</span><span>LLM</span>
+    </div>
+  </div>
+
+  <!-- PROJECT 4 -->
+  <div class="project-card">
+    <div class="project-icon">📦</div>
+    <div class="project-title">Canonical Data Models (Protobuf)</div>
+    <div class="project-desc">
+      Built a scalable Data Interchange Plane using Protobuf schemas, automated CI/CD, and multi-language contract generation.
+    </div>
+    <div class="project-tags">
+      <span>Protobuf</span><span>CI/CD</span><span>Java</span><span>Python</span><span>Automation</span>
+    </div>
+  </div>
+
+  <!-- PROJECT 5 -->
+  <div class="project-card">
+    <div class="project-icon">🌐</div>
+    <div class="project-title">Cloud-Native Data Lakehouse Platform</div>
+    <div class="project-desc">
+      Designed a high-scale data platform combining Iceberg, Glue, and EMR with secure ingestion patterns and automated governance.
+    </div>
+    <div class="project-tags">
+      <span>Iceberg</span><span>EMR</span><span>AWS</span><span>Glue</span><span>Lakehouse</span>
+    </div>
+  </div>
+
+  <!-- PROJECT 6 -->
+  <div class="project-card">
+    <div class="project-icon">📡</div>
+    <div class="project-title">Healthcare Analytics Platform (HIPAA-aligned)</div>
+    <div class="project-desc">
+      Delivered a secure ETL system for healthcare data, ensuring compliance, auditability, and high-throughput pipeline performance.
+    </div>
+    <div class="project-tags">
+      <span>Healthcare</span><span>ETL</span><span>Compliance</span><span>Security</span><span>PySpark</span>
+    </div>
+  </div>
+
+  <!-- PROJECT 7 -->
+  <div class="project-card">
+    <div class="project-icon">🔍</div>
+    <div class="project-title">Search Optimization with Vector Embeddings</div>
+    <div class="project-desc">
+      Implemented semantic search using embeddings & vector stores, improving relevance and user experience for enterprise knowledge retrieval.
+    </div>
+    <div class="project-tags">
+      <span>Vector DB</span><span>Pinecone</span><span>Embeddings</span><span>LLM</span>
+    </div>
+  </div>
+
+  <!-- PROJECT 8 -->
+  <div class="project-card">
+    <div class="project-icon">🛠️</div>
+    <div class="project-title">CI/CD for Multi-Language Protobuf Contracts</div>
+    <div class="project-desc">
+      Built automated tooling for Java, Python, and C# contract generation with full GitHub Actions integration.
+    </div>
+    <div class="project-tags">
+      <span>CI/CD</span><span>GitHub Actions</span><span>Maven</span><span>Contracts</span>
+    </div>
+  </div>
+
+  <!-- PROJECT 9 -->
+  <div class="project-card">
+    <div class="project-icon">🚀</div>
+    <div class="project-title">High-Scale ETL on AWS (Millions of Events/day)</div>
+    <div class="project-desc">
+      Engineered auto-scaling ETL pipelines using Glue + PySpark to handle massive daily ingestion with strong SLAs.
+    </div>
+    <div class="project-tags">
+      <span>AWS Glue</span><span>PySpark</span><span>ETL</span><span>Scaling</span>
+    </div>
+  </div>
+
+</div>
