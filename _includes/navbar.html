@@ -25,7 +25,12 @@
         </li>
         {% if site.resume %}
         <li class="nav-item">
-          <a class="nav-link" href="{{ site.resume | relative_url }}">Résumé</a>
+          <a class="nav-link" href="{{ site.resume | relative_url }}">Résumé (ATS)</a>
+        </li>
+        {% endif %}
+        {% if site.visual_resume %}
+        <li class="nav-item">
+          <a class="nav-link" href="{{ site.visual_resume | relative_url }}">Visual Résumé</a>
         </li>
         {% endif %}
       </ul>
