@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 600" preserveAspectRatio="xMidYMid slice">
+<defs>
+<linearGradient id="emr-serverless-g" x1="0" y1="0" x2="1" y2="1">
+<stop offset="0.00" stop-color="#2a0a05"/>
+<stop offset="0.50" stop-color="#7a2010"/>
+<stop offset="1.00" stop-color="#d84315"/>
+</linearGradient>
+<radialGradient id="emr-serverless-g-r" cx="0.25" cy="0.3" r="0.9">
+<stop offset="0" stop-color="#ffb38a" stop-opacity="0.18"/>
+<stop offset="1" stop-color="#ffb38a" stop-opacity="0"/>
+</radialGradient>
+</defs>
+<rect width="1920" height="600" fill="url(#emr-serverless-g)"/>
+<path d="M 0 180 Q 60 120 120 180 T 240 180 Q 300 120 360 180 T 480 180 Q 540 120 600 180 T 720 180 Q 780 120 840 180 T 960 180 Q 1020 120 1080 180 T 1200 180 Q 1260 120 1320 180 T 1440 180 Q 1500 120 1560 180 T 1680 180 Q 1740 120 1800 180 T 1920 180" fill="none" stroke="#ffb38a" stroke-opacity="0.1" stroke-width="2"/>
+<path d="M 0 270 Q 60 190 120 270 T 240 270 Q 300 190 360 270 T 480 270 Q 540 190 600 270 T 720 270 Q 780 190 840 270 T 960 270 Q 1020 190 1080 270 T 1200 270 Q 1260 190 1320 270 T 1440 270 Q 1500 190 1560 270 T 1680 270 Q 1740 190 1800 270 T 1920 270" fill="none" stroke="#ffb38a" stroke-opacity="0.16" stroke-width="2"/>
+<path d="M 0 360 Q 60 260 120 360 T 240 360 Q 300 260 360 360 T 480 360 Q 540 260 600 360 T 720 360 Q 780 260 840 360 T 960 360 Q 1020 260 1080 360 T 1200 360 Q 1260 260 1320 360 T 1440 360 Q 1500 260 1560 360 T 1680 360 Q 1740 260 1800 360 T 1920 360" fill="none" stroke="#ffb38a" stroke-opacity="0.22" stroke-width="2"/>
+<path d="M 0 450 Q 60 330 120 450 T 240 450 Q 300 330 360 450 T 480 450 Q 540 330 600 450 T 720 450 Q 780 330 840 450 T 960 450 Q 1020 330 1080 450 T 1200 450 Q 1260 330 1320 450 T 1440 450 Q 1500 330 1560 450 T 1680 450 Q 1740 330 1800 450 T 1920 450" fill="none" stroke="#ffb38a" stroke-opacity="0.12" stroke-width="2"/>
+<rect width="1920" height="600" fill="url(#emr-serverless-g-r)"/>
+</svg>
