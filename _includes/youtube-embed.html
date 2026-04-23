@@ -1,0 +1,29 @@
+{%- comment -%}
+Embeds a YouTube video in a responsive 16:9 container.
+
+Usage:
+  {% include youtube-embed.html id="BgKtXReBhj8" caption="AWS re:Invent recap" %}
+
+Params:
+  id       — required, YouTube video ID (the part after v= or /embed/)
+  caption  — optional, muted caption text below
+  start    — optional, start time in seconds
+{%- endcomment -%}
+
+{%- assign _src = "https://www.youtube.com/embed/" | append: include.id -%}
+{%- if include.start -%}{%- assign _src = _src | append: "?start=" | append: include.start -%}{%- endif -%}
+
+<div class="yt-embed my-3" style="max-width:720px; margin-left:auto; margin-right:auto;">
+  <div style="position:relative; padding-bottom:56.25%; height:0; overflow:hidden; border-radius:10px; box-shadow:0 8px 24px rgba(0,0,0,0.08);">
+    <iframe
+      src="{{ _src }}"
+      style="position:absolute; top:0; left:0; width:100%; height:100%; border:0;"
+      title="YouTube video"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerpolicy="strict-origin-when-cross-origin"
+      allowfullscreen></iframe>
+  </div>
+  {% if include.caption %}
+  <span class="caption text-muted d-block text-center mt-2">{{ include.caption }}</span>
+  {% endif %}
+</div>

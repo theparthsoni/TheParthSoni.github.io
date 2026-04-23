@@ -1,0 +1,247 @@
+---
+layout: page
+title: Special Mentions
+description: Talks, podcasts, and LinkedIn features on AWS, Data Engineering, and AI
+background: '/img/bg-mentions.svg'
+permalink: /mentions/
+---
+
+<style>
+  .mentions-intro { font-size: 1.05rem; line-height: 1.7; color: #333; margin-bottom: 30px; }
+  .mentions-section {
+    margin-top: 48px;
+    padding-top: 18px;
+  }
+  .mentions-section h2 {
+    font-size: 1.9rem;
+    font-weight: 800;
+    letter-spacing: -0.01em;
+    margin-bottom: 6px;
+  }
+  .mentions-section .section-sub {
+    color: #666;
+    font-size: 0.98rem;
+    margin-bottom: 24px;
+  }
+  .mention-card {
+    background: #fff;
+    border: 1px solid #eee;
+    border-radius: 14px;
+    padding: 22px;
+    margin-bottom: 28px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.05);
+    transition: transform .2s ease, box-shadow .2s ease;
+  }
+  .mention-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 24px rgba(0,0,0,0.10);
+  }
+  .mention-head {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-bottom: 14px;
+  }
+  .mention-title {
+    font-size: 1.15rem;
+    font-weight: 700;
+    margin: 0;
+    color: #111;
+  }
+  .mention-sub {
+    width: 100%;
+    color: #666;
+    font-size: 0.9rem;
+    margin-top: 2px;
+  }
+  .badge-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 4px 10px;
+    border-radius: 999px;
+    font-size: 0.78rem;
+    font-weight: 600;
+    line-height: 1;
+  }
+  .badge-aws { background: #232f3e; color: #ff9900; }
+  .badge-aws svg { height: 12px; width: auto; }
+  .badge-li { background: #0a66c2; color: #fff; }
+  .badge-yt { background: #ff0000; color: #fff; }
+  .badge-ai { background: #6c2bd9; color: #fff; }
+  .badge-de { background: #0e6158; color: #fff; }
+  .badge-doris { background: #e76f00; color: #fff; }
+  .badge-live { background: #c00; color: #fff; }
+
+  .aws-strip {
+    display: flex; align-items: center; justify-content: center; gap: 18px;
+    padding: 14px 18px; margin: 10px 0 18px;
+    background: linear-gradient(90deg,#232f3e 0%,#1a2433 100%);
+    border-radius: 10px; color: #fff;
+    flex-wrap: wrap;
+  }
+  .aws-strip .aws-logo {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-weight: 900; font-size: 1.15rem; letter-spacing: 0.5px;
+  }
+  .aws-strip .aws-logo .aws-orange { color: #ff9900; }
+  .aws-strip .aws-tags { font-size: 0.85rem; color: #ddd; }
+  .aws-strip .aws-tags span {
+    display: inline-block; margin: 0 6px;
+    padding: 2px 8px; border: 1px solid rgba(255,153,0,0.4);
+    border-radius: 4px; color: #ffcc80;
+  }
+
+  .featured-pin {
+    display: inline-block;
+    background: #fff3cd;
+    color: #8a6d0c;
+    border: 1px solid #ffe58a;
+    padding: 3px 9px;
+    border-radius: 6px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    margin-left: 6px;
+  }
+</style>
+
+<p class="mentions-intro">
+  A curated feed of talks, podcasts, and LinkedIn features where I've discussed real-world architectures on
+  <strong>AWS</strong>, <strong>Data Engineering</strong>, and <strong>AI / ML</strong> — from lakehouse
+  migrations and real-time streaming to production RAG and agentic workflows.
+</p>
+
+<div class="aws-strip" aria-label="AWS focus">
+  <div class="aws-logo">aws<span class="aws-orange">.</span></div>
+  <div class="aws-tags">
+    <span>Glue</span><span>EMR</span><span>Kinesis</span><span>MSK</span><span>Bedrock</span>
+    <span>Redshift</span><span>Athena</span><span>SageMaker</span><span>Iceberg on S3</span>
+  </div>
+</div>
+
+<!-- ============================ YOUTUBE ============================ -->
+<div class="mentions-section">
+  <h2>🎥 YouTube Talks &amp; Podcasts</h2>
+  <p class="section-sub">Deep-dive conversations focused on AWS-native data and AI architectures.</p>
+
+  <div class="mention-card">
+    <div class="mention-head">
+      <span class="badge-pill badge-yt">YouTube</span>
+      <span class="badge-pill badge-aws">
+        <!-- Inline AWS-style wordmark -->
+        <svg viewBox="0 0 60 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><text x="0" y="18" font-family="Helvetica, Arial" font-weight="900" font-size="18" fill="#ff9900">aws</text></svg>
+        AWS
+      </span>
+      <span class="badge-pill badge-de">Data Engineering</span>
+      <span class="badge-pill badge-ai">AI / ML</span>
+      <span class="featured-pin">FEATURED</span>
+      <h3 class="mention-title">Architecting cost-efficient analytics on AWS</h3>
+      <div class="mention-sub">Lakehouse, streaming, and AI — patterns that actually ship to production.</div>
+    </div>
+    {% include youtube-embed.html id="BgKtXReBhj8" caption="Architecting cost-efficient analytics on AWS — full session" %}
+  </div>
+
+  <div class="mention-card">
+    <div class="mention-head">
+      <span class="badge-pill badge-yt">YouTube</span>
+      <span class="badge-pill badge-aws">
+        <svg viewBox="0 0 60 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><text x="0" y="18" font-family="Helvetica, Arial" font-weight="900" font-size="18" fill="#ff9900">aws</text></svg>
+        AWS
+      </span>
+      <span class="badge-pill badge-de">Data Engineering</span>
+      <span class="badge-pill badge-doris">Apache Doris</span>
+      <h3 class="mention-title">Production architectures with AWS + Apache Doris</h3>
+      <div class="mention-sub">Five battle-tested patterns combining AWS services with open-source analytics.</div>
+    </div>
+    {% include youtube-embed.html id="-kIXM32M7qo" caption="Production architectures combining AWS and Apache Doris" %}
+  </div>
+</div>
+
+<!-- ============================ LINKEDIN ============================ -->
+<div class="mentions-section">
+  <h2>💼 LinkedIn Features</h2>
+  <p class="section-sub">Community recaps, session announcements, and post-event discussions.</p>
+
+  <div class="mention-card">
+    <div class="mention-head">
+      <span class="badge-pill badge-li">LinkedIn</span>
+      <span class="badge-pill badge-aws">
+        <svg viewBox="0 0 60 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><text x="0" y="18" font-family="Helvetica, Arial" font-weight="900" font-size="18" fill="#ff9900">aws</text></svg>
+        AWS
+      </span>
+      <span class="badge-pill badge-doris">Apache Doris</span>
+      <h3 class="mention-title">Apache Doris Summit 2025 — session recap</h3>
+    </div>
+    {% include linkedin-embed.html urn="7396086617695907840" height="1265" caption="Session recap on LinkedIn" %}
+  </div>
+
+  <div class="mention-card">
+    <div class="mention-head">
+      <span class="badge-pill badge-li">LinkedIn</span>
+      <span class="badge-pill badge-aws">
+        <svg viewBox="0 0 60 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><text x="0" y="18" font-family="Helvetica, Arial" font-weight="900" font-size="18" fill="#ff9900">aws</text></svg>
+        AWS
+      </span>
+      <span class="badge-pill badge-de">Data Engineering</span>
+      <h3 class="mention-title">Community post — cost-optimization &amp; lakehouse</h3>
+    </div>
+    {% include linkedin-embed.html urn="7389254949869772800" height="1097" caption="Community discussion on cost-optimization patterns" %}
+  </div>
+
+  <div class="mention-card">
+    <div class="mention-head">
+      <span class="badge-pill badge-li">LinkedIn</span>
+      <span class="badge-pill badge-aws">
+        <svg viewBox="0 0 60 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><text x="0" y="18" font-family="Helvetica, Arial" font-weight="900" font-size="18" fill="#ff9900">aws</text></svg>
+        AWS
+      </span>
+      <span class="badge-pill badge-ai">AI / ML</span>
+      <h3 class="mention-title">Long-form post — AI on AWS in production</h3>
+    </div>
+    {% include linkedin-embed.html urn="7353416479662342146" type="ugcPost" height="2166" caption="Long-form article on production AI architectures" %}
+  </div>
+
+  <div class="mention-card">
+    <div class="mention-head">
+      <span class="badge-pill badge-li">LinkedIn</span>
+      <span class="badge-pill badge-aws">
+        <svg viewBox="0 0 60 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><text x="0" y="18" font-family="Helvetica, Arial" font-weight="900" font-size="18" fill="#ff9900">aws</text></svg>
+        AWS
+      </span>
+      <span class="badge-pill badge-de">Data Engineering</span>
+      <h3 class="mention-title">Long-form post — streaming &amp; lakehouse patterns</h3>
+    </div>
+    {% include linkedin-embed.html urn="7353401534262497280" type="ugcPost" height="1680" caption="Long-form article on streaming and lakehouse patterns" %}
+  </div>
+
+  <div class="mention-card">
+    <div class="mention-head">
+      <span class="badge-pill badge-li">LinkedIn</span>
+      <span class="badge-pill badge-live">LIVE</span>
+      <span class="badge-pill badge-aws">
+        <svg viewBox="0 0 60 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><text x="0" y="18" font-family="Helvetica, Arial" font-weight="900" font-size="18" fill="#ff9900">aws</text></svg>
+        AWS
+      </span>
+      <h3 class="mention-title">LinkedIn Live — AWS architectures session</h3>
+    </div>
+    <div class="yt-embed my-3" style="max-width:720px; margin-left:auto; margin-right:auto;">
+      <div style="position:relative; padding-bottom:56.25%; height:0; overflow:hidden; border-radius:10px; box-shadow:0 8px 24px rgba(0,0,0,0.08);">
+        <iframe
+          src="https://www.linkedin.com/video/embed/live/urn:li:ugcPost:7348310460481355776"
+          style="position:absolute; top:0; left:0; width:100%; height:100%; border:0;"
+          title="LinkedIn Live embed"
+          frameborder="0"
+          allowfullscreen></iframe>
+      </div>
+      <span class="caption text-muted d-block text-center mt-2">LinkedIn Live — AWS architectures session</span>
+    </div>
+  </div>
+</div>
+
+<div class="mentions-section">
+  <p class="text-muted" style="font-size:0.9rem;">
+    Want to collaborate on a talk, podcast, or workshop covering AWS, Data Engineering, or AI architectures?
+    <a href="{{ '/contact' | relative_url }}">Get in touch →</a>
+  </p>
+</div>
