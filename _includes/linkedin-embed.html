@@ -1,0 +1,38 @@
+{%- comment -%}
+Embeds a LinkedIn post.
+
+Usage:
+  {% include linkedin-embed.html urn="7194512345678901234" caption="Doris Summit keynote recap" %}
+
+How to get the URN:
+  1. Open the LinkedIn post in a browser.
+  2. Click the "..." menu on the post → "Embed this post".
+  3. Copy the iframe src — it looks like:
+       https://www.linkedin.com/embed/feed/update/urn:li:share:7194512345678901234
+     or
+       https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7194512345678901234
+  4. Pass just the numeric ID as `urn`, plus `type` if it's ugcPost (default is share).
+
+Params:
+  urn     — required, the numeric ID from the embed URL
+  type    — optional, "share" (default) or "ugcPost"
+  height  — optional, iframe height in px (default 570)
+  caption — optional, muted caption text below the embed
+{%- endcomment -%}
+
+{%- assign _type = include.type | default: "share" -%}
+{%- assign _height = include.height | default: "570" -%}
+<div class="linkedin-embed my-4">
+  <iframe
+    src="https://www.linkedin.com/embed/feed/update/urn:li:{{ _type }}:{{ include.urn }}"
+    height="{{ _height }}"
+    width="100%"
+    style="border:1px solid rgba(0,0,0,0.08); border-radius:8px; max-width:560px; display:block; margin:0 auto;"
+    frameborder="0"
+    allowfullscreen=""
+    title="Embedded LinkedIn post">
+  </iframe>
+  {% if include.caption %}
+  <span class="caption text-muted d-block text-center mt-2">{{ include.caption }}</span>
+  {% endif %}
+</div>
